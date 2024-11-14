@@ -1,19 +1,37 @@
-# Research Reproduction: Underinvestment in a Profitable Technology: The Case of Seasonal Migration in Bangladesh
+<div style="text-align: center;">
+  <h1>Research Reproduction: Underinvestment in a Profitable Technology: The Case of Seasonal Migration in Bangladesh</h1>
+</div>
 
 (In progress)
 
-## Table of Contents
-1. [Overview](#overview)
-2. [Key Resources](#key-resources)
-3. [Objective](#objective)
-4. [Structure](#structure)
-   1. [Data Loading and Exploration](#1-data-loading-and-exploration)
-   2. [Data Cleaning](#2-data-cleaning)
-   3. [Regression Analysis](#3-regression-analysis)
-   4. [Replication of Key Results](#4-replication-of-key-results)
-   5. [Instrumental Variables Analysis](#5-instrumental-variables-analysis)
-   6. [Interpretation and Economic Meaning](#6-interpretation-and-economic-meaning)
-5. [Conclusion](#conclusion)
+<table align="center">          
+  <tr>  
+    <td colspan="2" align="center"><strong>Table of Contents</strong></td>  
+  </tr> 
+  <tr>  
+    <td>1. <a href="#overview">Overview</a></td>   
+    <td>2. <a href="#key-resources">Key Resources</a></td>
+  </tr>
+  <tr> 
+    <td>3. <a href="#objective">Objective</a></td>
+    <td>4. <a href="#conclusion">Conclusion</a></td> 
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><strong>Structure</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <ul>
+        <li><a href="#1-data-loading-and-exploration">Data Loading and Exploration</a></li>
+        <li><a href="#2-data-cleaning">Data Cleaning</a></li>
+        <li><a href="#3-regression-analysis">Regression Analysis</a></li>
+        <li><a href="#4-replication-of-key-results">Replication of Key Results</a></li>
+        <li><a href="#5-instrumental-variables-analysis">Instrumental Variables Analysis</a></li>
+        <li><a href="#6-interpretation-and-economic-meaning">Interpretation and Economic Meaning</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 
 
