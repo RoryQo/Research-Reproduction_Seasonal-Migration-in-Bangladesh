@@ -18,10 +18,8 @@
     <td>4. <a href="#conclusion">Conclusion</a></td> 
   </tr>
   <tr>
-    <td colspan="2" align="center"><strong>Structure</strong></td>
-  </tr>
-  <tr>
     <td colspan="2">
+      <strong>5. <a href="#structure">Structure</a></strong>
       <ul>
         <li><a href="#1-data-loading-and-exploration">Data Loading and Exploration</a></li>
         <li><a href="#2-data-cleaning">Data Cleaning</a></li>
@@ -32,7 +30,18 @@
       </ul>
     </td>
   </tr>
+  <tr> 
+    <td colspan="2" align="center">6. <a href="#references">References</a></td> <!-- References not bold -->
+  </tr>
 </table>
+
+
+
+
+
+
+
+
 
 
 
@@ -128,6 +137,8 @@ The repository involves the following tasks:
 
 ## Conclusion
 
+## References
 
+“Underinvestment in a Profitable Technology: The Case of Seasonal Migration in Bangladesh.” Econometrica, vol. 82, no. 5, 2014, pp. 1671–1748, https://doi.org/10.3982/ecta10489.
 
 
