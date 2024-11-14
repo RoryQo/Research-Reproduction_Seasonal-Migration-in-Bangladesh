@@ -1,8 +1,9 @@
-<div style="text-align: center;">
-  <h1>Research Reproduction: Underinvestment in a Profitable Technology: The Case of Seasonal Migration in Bangladesh</h1>
-</div>
+<h2 align="center">Research Reproduction: Underinvestment in a Profitable Technology: The Case of Seasonal Migration in Bangladesh</h2>                        
+      
 
+<h4 align="center">
 (In progress)
+</h4>
 
 <table align="center">          
   <tr>  
@@ -40,6 +41,8 @@
 This repository focuses on the analysis of a **Randomized Control Trial (RCT)** from Bryan, G., Chowdhury, S., and Mobarak, A. M. (2014). The reproduction involves the analysis of the effects of **seasonal migration** on household consumption and expenditures in rural Bangladesh, as studied in their paper, *Underinvestment in a Profitable Technology: The Case of Seasonal Migration in Bangladesh*, published in *Econometrica*.
 
 The primary objective of the assignment is to replicate key results from the paper and interpret the findings based on RCT methodology.
+
+<br>
 
 [![View Original Research Paper](https://img.shields.io/badge/View%20Original%20Research%20Paper-0056A0?style=flat&logo=external-link&logoColor=white&color=0056A0)](https://www.aeaweb.org/articles?id=10.1257/aer.98.1.311)
 
