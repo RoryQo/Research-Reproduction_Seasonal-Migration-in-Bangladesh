@@ -7,11 +7,11 @@
   </tr> 
   <tr>
     <td>1. <a href="#project-setup">Project Setup</a></td>   
-    <td>5. <a href="#step-3-estimating-migration-effects">Step 3: Estimating Migration Effects</a></td>
+    <td>5. <a href="#step-3-first-stage">Step 3: First Stage Effects</a></td>
   </tr>
   <tr> 
     <td>2. <a href="#r-libraries">R Libraries</a></td>   
-    <td>6. <a href="#step-4-estimating-consumption-effects-round-2">Step 4: Estimating Consumption Effects (Round 2)</a></td>
+    <td>6. <a href="#step-4-reduced-form">Step 4: Reduced Form</a></td>
   </tr>
   <tr>
     <td>3. <a href="#loading-the-data">Loading the Data</a></td>   
@@ -65,19 +65,34 @@ The first step is to merge the Round 1 and Round 2 datasets by household ID (`hh
 
 To replicate Table 1 (the difference column), we regress baseline household characteristics on the treatment indicator (`incentivized`), clustering standard errors by village. This regression estimates the intention-to-treat (ITT) effect on various baseline outcomes such as household savings, expenditures, and caloric intake.
 
-#### Interpretation:
-The ITT estimates measure the effect of being offered the migration incentive (i.e., receiving the treatment), regardless of whether the household actually migrates. For example, the ITT effect on total calories consumed, household expenditures, and savings will show how receiving the treatment (cash or credit) impacts these variables on average, even for those who did not migrate. These estimates help us understand the broader impact of being in the treatment group, not just the direct effect of migration.
+<img src="https://github.com/RoryQo/Research-Reproduction_Seasonal-Migration-in-Bangladesh/blob/main/Table1.jpg?raw=true" alt="Table 1" width="550px"/>
 
-### Step 3: Estimating Migration Effects
-
-Next, we estimate the effect of the treatment on migration using data from Round 2. Specifically, we regress whether a household member migrated (`migrant`) on the treatment indicator (`incentivized`). This regression allows us to estimate the likelihood that the treatment increases migration, clustering standard errors by village.
 
 #### Interpretation:
-The migration effect captures the relationship between the treatment and the likelihood of seasonal migration. If the treatment (cash or credit) successfully incentivizes migration, the coefficient on `incentivized` should be positive, indicating that households in the treatment group are more likely to migrate. This regression is crucial for understanding how the treatment influences migration decisions.
+The ITT estimates measure the effect of being offered the migration incentive (i.e., receiving the treatment), regardless of whether the household actually migrates. For example, the ITT effect on total calories consumed, household expenditures, and savings will show how receiving the treatment (offered an incentive) impacts these variables on average, even for those who did not migrate. These estimates help us understand the broader impact of being in the treatment group, not just the direct effect of migration.
 
-### Step 4: Estimating Consumption Effects (Round 2)
+### Step 3: First Stage
+
+Next, we estimate the effect of the treatment on migration using data from Round 2 (first-stage regression). Specifically, we regress whether a household member migrated (`migrant`) on the treatment indicator (`incentivized`). This regression allows us to estimate the likelihood that the treatment increases migration, clustering standard errors by village.
+
+<img src="https://github.com/RoryQo/Research-Reproduction_Seasonal-Migration-in-Bangladesh/blob/main/Table_FirstStage.jpg?raw=true" alt="First Stage Table" width="400px"/>
+
+
+#### Interpretation:
+The migration effect captures the relationship between the treatment and the likelihood of seasonal migration. If the treatment (cash or credit) successfully incentivizes migration, the coefficient on `incentivized` should be positive, indicating that households in the treatment group are more likely to migrate. This regression is crucial for understanding the strength of the instrument.  
+
+The instrument is strong because we can see the f stat (12.4) is greater than 10.
+
+```
+summary(model)$fstat[1]
+```
+
+### Step 4: Reduced Form
 
 To replicate Table 3 (row 3, column 4), we regress total consumption per capita in Round 2 on the treatment indicator (`incentivized`), excluding outliers (e.g., extreme values of fish consumption). This regression estimates the effect of receiving the treatment on total household consumption in the post-treatment period.
+
+<img src="https://github.com/RoryQo/Research-Reproduction_Seasonal-Migration-in-Bangladesh/blob/main/Table_ReducedForm.jpg?raw=true" alt="Reduced Form Table" width="450px"/>
+
 
 #### Interpretation:
 This analysis estimates the effect of the treatment on consumption outcomes (food and non-food). If the treatment increases household consumption, we would expect the coefficient on `incentivized` to be positive, showing an increase in total household consumption as a result of the treatment. Excluding outliers is important to ensure that the results are not unduly influenced by extreme data points, such as unusually high expenditures on fish.
