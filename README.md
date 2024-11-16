@@ -117,3 +117,8 @@ The LATE estimates provide a more precise understanding of how migration affects
 This replication successfully reproduces key elements of the empirical analysis from Bryan et al. (2014) using R. By estimating treatment effects on migration and consumption, we gain insights into the impact of seasonal migration subsidies on household welfare.
 
 The results contribute to understanding the causal relationship between migration and household welfare, providing important policy insights into how migration subsidies can improve household consumption. Through this process of replication, we not only validate the original findings but also enhance our understanding of the mechanisms through which seasonal migration can be leveraged as a tool for improving rural household welfare.
+
+
+## References
+
+Gharad, Bryan, et al. “Underinvestment in a Profitable Technology: The Case of Seasonal Migration in Bangladesh.” Econometrica, vol. 82, no. 5, 2014, pp. 1671–1748, https://doi.org/10.3982/ecta10489.
