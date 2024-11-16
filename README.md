@@ -21,7 +21,11 @@
     <td>4. <a href="#replication-steps">Replication Steps</a></td>   
     <td>8. <a href="#conclusion">Conclusion</a></td>
   </tr>
+  <tr>
+    <td colspan="2">9. <a href="#references">References</a></td>   
+  </tr>
 </table>
+
 
 
 
