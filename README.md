@@ -32,7 +32,7 @@ This document provides a replication of the empirical analysis from Bryan, G., C
 
 The purpose of this project is to replicate key analyses from the original paper using the provided dataset and R programming language. The focus is on estimating treatment effects, interpreting regression results, and understanding the causal relationship between migration and household welfare.
 
-[![View Original Research Paper](https://img.shields.io/badge/View%20Original%20Research%20Paper-0056A0?style=flat&logo=external-link&logoColor=white&color=0056A0)](https://www.aeaweb.org/articles?id=10.1257/aer.98.1.311)
+[![View Original Research Paper](https://img.shields.io/badge/View%20Original%20Research%20Paper-0056A0?style=flat&logo=external-link&logoColor=white&color=0056A0)](https://poverty-action.org/sites/default/files/publications/Under-investment%20in%20a%20Profitable%20Technology.pdf)
 
 ## Project Setup
 
