@@ -101,6 +101,10 @@ This analysis estimates the effect of the treatment on consumption outcomes (foo
 
 To isolate the causal effect of migration on household consumption, we use an instrumental variable (IV) approach. Migration is treated as an endogenous variable, with the treatment indicator (`incentivized`) serving as the instrument. The instrumental variable approach allows us to estimate the Local Average Treatment Effect (LATE), which focuses on the effect of migration for those households who were induced to migrate by the treatment.
 
+```
+m1 <- felm(average_exp2 ~ 1 | upazila | (migrant ~ incentivized)|village, data = r2)
+```
+
 #### Interpretation:
 The LATE estimates provide a more precise understanding of how migration affects household welfare for the subset of households who actually migrated as a result of the treatment. This method addresses the potential endogeneity of migration, as not all households who are incentivized to migrate will actually do so. By using the treatment as an instrument, we are able to isolate the causal effect of migration on household consumption, focusing on the "compliers" who migrate because of the treatment. The LATE is particularly useful for understanding the true effect of migration on consumption for those households who take up the treatment.
 
