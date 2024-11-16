@@ -7,7 +7,7 @@
   </tr> 
   <tr>
     <td>1. <a href="#project-setup">Project Setup</a></td>   
-    <td>5. <a href="#step-3-first-stage">Step 3: First Stage Effects</a></td>
+    <td>5. <a href="#step-3-first-stage">Step 3: First Stage Effects</a></td> 
   </tr>
   <tr> 
     <td>2. <a href="#r-libraries">R Libraries</a></td>   
