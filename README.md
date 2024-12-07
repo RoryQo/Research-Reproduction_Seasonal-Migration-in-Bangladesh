@@ -120,9 +120,10 @@ m1 <- felm(average_exp2 ~ 1 | upazila | (migrant ~ incentivized)|village, data =
 
 #### Interpretation:
 
-Total consumption in households that were induced to migrate by these treatments increased by about 374 takka. This is substantial since the mean of total consumption is about 1000 takka.
  
 The LATE estimates provide a more precise understanding of how migration affects household welfare for the subset of households who actually migrated as a result of the treatment. This method addresses the potential endogeneity of migration, as not all households who are incentivized to migrate will actually do so. By using the treatment as an instrument, we are able to isolate the causal effect of migration on household consumption, focusing on the "compliers" who migrate because of the treatment. The LATE is particularly useful for understanding the true effect of migration on consumption for those households who take up the treatment.
+
+***Total consumption in households that were induced to migrate by these treatments increased by about 374 takka. This is substantial since the mean of total consumption is about 1000 takka.***
 
 ## Conclusion
 
