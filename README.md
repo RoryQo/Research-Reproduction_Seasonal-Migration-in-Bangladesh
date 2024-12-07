@@ -36,6 +36,8 @@ This document provides a replication of the empirical analysis from Bryan, G., C
 
 The purpose of this project is to replicate key analyses from the original paper using the provided dataset and R programming language. The focus is on estimating treatment effects, interpreting regression results, and understanding the causal relationship between migration and household welfare.
 
+The data can be found by going to Mushfiq Mobarak's Yale faculty page, and then following the link to the data repository page on the Harvard dataverse. 
+
 [![View Original Research Paper](https://img.shields.io/badge/View%20Original%20Research%20Paper-0056A0?style=flat&logo=external-link&logoColor=white&color=0056A0)](https://poverty-action.org/sites/default/files/publications/Under-investment%20in%20a%20Profitable%20Technology.pdf)
 
 ## Project Setup
@@ -117,6 +119,9 @@ m1 <- felm(average_exp2 ~ 1 | upazila | (migrant ~ incentivized)|village, data =
 </p>
 
 #### Interpretation:
+
+Total consumption in households that were induced to migrate by these treatments increased by about 374 takka. This is substantial since the mean of total consumption is about 1000 takka.
+ 
 The LATE estimates provide a more precise understanding of how migration affects household welfare for the subset of households who actually migrated as a result of the treatment. This method addresses the potential endogeneity of migration, as not all households who are incentivized to migrate will actually do so. By using the treatment as an instrument, we are able to isolate the causal effect of migration on household consumption, focusing on the "compliers" who migrate because of the treatment. The LATE is particularly useful for understanding the true effect of migration on consumption for those households who take up the treatment.
 
 ## Conclusion
