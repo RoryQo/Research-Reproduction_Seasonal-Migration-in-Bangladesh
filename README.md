@@ -38,7 +38,11 @@ The purpose of this project is to replicate key analyses from the original paper
 
 The data can be found by going to Mushfiq Mobarak's Yale faculty page, and then following the link to the data repository page on the Harvard dataverse. 
 
-[![View Original Research Paper](https://img.shields.io/badge/View%20Original%20Research%20Paper-0056A0?style=flat&logo=external-link&logoColor=white&color=0056A0)](https://poverty-action.org/sites/default/files/publications/Under-investment%20in%20a%20Profitable%20Technology.pdf)
+[![View Original Research Paper](https://img.shields.io/badge/View%20Data%20Repository%20-0056A0?style=flat&logo=external-link&logoColor=white&color=0056A0)](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/28277&studyListingIndex=1_f8f7af3b0e486bffeb11b94260f2) 
+
+[![View Original Research Paper](https://img.shields.io/badge/View%20Original%20Research%20Paper-0056A0?style=flat&logo=external-link&logoColor=white&color=0056A0)](https://poverty-action.org/sites/default/files/publications/Under-investment%20in%20a%20Profitable%20Technology.pdf) 
+
+
 
 ## Project Setup
 
