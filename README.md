@@ -69,8 +69,9 @@ The first step is to merge the Round 1 and Round 2 datasets by household ID (`hh
 
 To replicate Table 1 (the difference column), we regress baseline household characteristics on the treatment indicator (`incentivized`), clustering standard errors by village. This regression estimates the intention-to-treat (ITT) effect on various baseline outcomes such as household savings, expenditures, and caloric intake.
 
+<p align="center">
 <img src="https://github.com/RoryQo/Research-Reproduction_Seasonal-Migration-in-Bangladesh/blob/main/Figures/Table1.jpg?raw=true" alt="Table 1" width="550px"/>
-
+</p>
 
 #### Interpretation:
 The ITT estimates measure the effect of being offered the migration incentive (i.e., receiving the treatment), regardless of whether the household actually migrates. For example, the ITT effect on total calories consumed, household expenditures, and savings will show how receiving the treatment (offered an incentive) impacts these variables on average, even for those who did not migrate. These estimates help us understand the broader impact of being in the treatment group, not just the direct effect of migration.
@@ -79,8 +80,9 @@ The ITT estimates measure the effect of being offered the migration incentive (i
 
 Next, we estimate the effect of the treatment on migration using data from Round 2 (first-stage regression). Specifically, we regress whether a household member migrated (`migrant`) on the treatment indicator (`incentivized`). This regression allows us to estimate the likelihood that the treatment increases migration, clustering standard errors by village.
 
+<p align="center">
 <img src="https://github.com/RoryQo/Research-Reproduction_Seasonal-Migration-in-Bangladesh/blob/main/Figures/Table_FirstStage.jpg?raw=true" alt="First Stage Table" width="400px"/>
-
+</p>
 
 #### Interpretation:
 The migration effect captures the relationship between the treatment and the likelihood of seasonal migration. If the treatment (cash or credit) successfully incentivizes migration, the coefficient on `incentivized` should be positive, indicating that households in the treatment group are more likely to migrate. This regression is crucial for understanding the strength of the instrument.  
@@ -95,8 +97,9 @@ summary(model)$fstat[1]
 
 To replicate Table 3 (row 3, column 4), we regress total consumption per capita in Round 2 on the treatment indicator (`incentivized`), excluding outliers (e.g., extreme values of fish consumption). This regression estimates the effect of receiving the treatment on total household consumption in the post-treatment period.
 
+<p align="center">
 <img src="https://github.com/RoryQo/Research-Reproduction_Seasonal-Migration-in-Bangladesh/blob/main/Figures/Table_ReducedForm.jpg?raw=true" alt="Reduced Form Table" width="450px"/>
-
+</p>
 
 #### Interpretation:
 This analysis estimates the effect of the treatment on consumption outcomes (food and non-food). If the treatment increases household consumption, we would expect the coefficient on `incentivized` to be positive, showing an increase in total household consumption as a result of the treatment. Excluding outliers is important to ensure that the results are not unduly influenced by extreme data points, such as unusually high expenditures on fish.
@@ -109,7 +112,9 @@ To isolate the causal effect of migration on household consumption, we use an in
 m1 <- felm(average_exp2 ~ 1 | upazila | (migrant ~ incentivized)|village, data = r2)
 ```
 
+<p align="center">
 <img src="https://github.com/RoryQo/Research-Reproduction_Seasonal-Migration-in-Bangladesh/blob/main/Figures/LATE.jpg?raw=true" alt="Reduced Form Table" width="450px"/>
+</p>
 
 #### Interpretation:
 The LATE estimates provide a more precise understanding of how migration affects household welfare for the subset of households who actually migrated as a result of the treatment. This method addresses the potential endogeneity of migration, as not all households who are incentivized to migrate will actually do so. By using the treatment as an instrument, we are able to isolate the causal effect of migration on household consumption, focusing on the "compliers" who migrate because of the treatment. The LATE is particularly useful for understanding the true effect of migration on consumption for those households who take up the treatment.
